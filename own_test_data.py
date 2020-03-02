@@ -44,33 +44,8 @@ class Flower(data.Dataset):
     def __len__(self):
         return len(self.imgs)
 
-#dataSet=Flower('E:/总目录/大三下实习/oxford102/',transform=transform)
-#
-#print(dataSet[0])
-#
-#
-#
-#dataset1 = datasets.MNIST(root='E:/总目录/大三下实习/data', download=True,train = True,
-#                          transform=transforms.Compose([
-#                       transforms.Resize(64),
-#                       transforms.ToTensor(),
-#                       transforms.Normalize([0.5], [0.5]),
-#                   ]))
-#
-#print(dataset1[0])
 
 ##print(dataSet[1])
 ##print(dataSet[2])
 ##print(dataSet[3])
 ##print(dataSet[4])
-#
-#dataloader = torch.utils.data.DataLoader(dataSet, batch_size=64,
-#                                         shuffle=True)
-#
-#dataiter = iter(dataloader)
-#
-#imgs, labels = next(dataiter)
-#print(imgs.size()) 
-##
-#for i, (data, _) in enumerate(dataloader):
-#    print(i,data)
